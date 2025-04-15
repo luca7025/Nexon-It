@@ -1,0 +1,335 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-y: clip;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden; 
+  overflow-y: auto; 
+}
+
+/* NAVBAR START */
+.container-nav  {
+  display: flex;
+  justify-content: space-between;
+  position: fixed ;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  text-decoration: none;
+  box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.container-content a  {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.container-content a:hover{
+  transform: scale(1.5);
+}
+
+.container-content  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+/* NAVBAR END */
+
+/* BANNER START */
+.container-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url("image/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-banner h1 {
+  color: black;
+  font-size: clamp(40px, 8vw, 100px);
+  font-family: "Teko", sans-serif;
+  letter-spacing: 30px;
+
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.container-banner p {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+  2px 2px 0 black;
+
+  font-style: italic;
+  font-family: "Handlee", cursive;
+  margin-top: 10px;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+
+.container-banner button {
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+}
+.container-banner button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT US START */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  scroll-margin-top: 100px;
+}
+.about-pic img {
+  margin-left: -100px;
+  margin-top: -126px;
+  padding-top: -126px;
+}
+.about-head {
+  margin-top: 75px;
+  text-align: center;
+}
+
+.about-head span {
+  color: red;
+}
+
+.about-container p {
+  font-size: 20px;
+  font-family: "Handlee", cursive;
+  text-align: justify;
+}
+
+/* OUR SERVICES START */
+.container-our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.container-our-services .card {
+  border: 1px solid black;
+}
+.container-our-services h1 {
+  padding-bottom: 20px;
+}
+.container-our-services span {
+  color: red;
+}
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+
+.card.card-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card.card-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card.card-image img {
+  transition: transform 0.5s ease;
+}
+
+.card.card-image:hover img {
+  transform: scale(1.05);
+}
+
+/* FORM START */
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 45px;
+}
+
+.container-box1 h2 {
+  font-size: 50px;
+}
+
+.container-box1 span {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.container-box1 p {
+  font-size: 24px;
+}
+
+.container-box2 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid black;
+}
+
+.container-box2 input,
+.container-box2 textarea,
+.container-box2 select {
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.container-box2 .btn {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  width: 70%;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background-color: rgba(255, 255, 4, 0.322);
+  cursor: pointer;
+}
+
+/* OUR CLIENTS START */
+.container-partners h1 {
+  font-size: 50px;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.container-partners img {
+  padding: 25px;
+}
+
+/* FOOTER START */
+.col, 
+.container-area, 
+.container-contact, 
+.container-follow {
+  padding: 25px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* LEGAL AREA */
+.container-area {
+  display: flex;
+  flex-direction: column;
+}
+.container-area a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 0;
+}
+
+/* CONTACT AREA */
+.container-contact p {
+  text-align: justify;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+/* FOLLOW US */
+.container-follow a {
+  text-decoration: none;
+  color: black;
+}
+.container-follow i {
+  padding: 10px;
+  font-size: 20px;
+}
+.container-follow h4 {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 430px) {
+  .container-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-nav img {
+    margin-top: 10px;
+  }
+  .container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 435px) {
+  .container-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-nav img {
+    margin-top: 10px;
+  }
+  .container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+}
+
+@media (max-width:420px){
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
